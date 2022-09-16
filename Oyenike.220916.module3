@@ -1,0 +1,95 @@
+    1  sudo yum update
+    2  pwd
+    3  cd /var/log
+    4  cd ..
+    5  pwd
+    6  ls
+    7  ls -l
+    8  ls -la
+    9  pwd
+   10  ls
+   11  cd /var/log
+   12  cd ..
+   13  ls
+   14  ls -l
+   15  cd c268
+   16  ls
+   17  cd ..
+   18  git clone https://github.com/Oyenike-Nwanebu/c268.git
+   19  cd c268
+   20  ls
+   21  git add .
+   22  git commit -m "new file added"
+   23  git push
+   24  cd
+   25  ls -ltr
+   26  cd c268
+   27  mkdir BasicExercise
+   28  cd BasicExercise
+   29  pwd
+   30  touch file.txt
+   31  cd ..
+   32  pwd
+   33  cd BasicExercise
+   34  ls
+   35  cd ..
+   36  rm -rf BasicExercise
+   37  ls -ltr
+   38  ls -latr
+   39  cd 
+   40  pwd
+   41  ls 
+   42  cd c268
+   43  pwd
+   44  find /home/ec2-user/c268 -name "file*"
+   45  cat Oyenike.220916.module2
+   46  cd ..
+   47  cat Oyenike.220916.module2
+   48  vi Oyenike.220916.module2
+   49  cd
+   50  pwd
+   51  mkdir Algo1
+   52  cd ALgo1
+   53  cd Algo1
+   54  mkdir config bin logs scripts
+   55  cd config
+   56  touch config.config variables
+   57  cd ..
+   58  cd scripts
+   59  touch start.sh stop.sh admin.sh
+   60  cd ..
+   61  cd logs
+   62  touch today.log
+   63  cd
+   64  ls -ltr
+   65  ls -R
+   66  cd /Algo1/config
+   67  cd ~/Algo1/config
+   68  rm variables
+   69  ls
+   70  cd ~/Algo1
+   71  rmdir bin
+   72  ls
+   73  cd
+   74  cd Algo1
+   75  mkdir bin
+   76  cd logs
+   77  mkdir oldlogs
+   78  cd oldlogs
+   79  mkdir 2019 2018 2017
+   80  cd 2017
+   81  touch 2017.log
+   82  cd ../2018
+   83  touch 2018.log
+   84  cd ../2019
+   85  touch 2019.log
+   86  cd 
+   87  rm -r ~/Algo1/logs/oldlogs
+   88  pwd
+   89  find -name "*.sh"
+   90  cd ~/Algo1/scripts
+   91  rm s*.sh
+   92  ls -a
+   93  ls -la
+   94  cd ~/c268
+   95  history > Oyenike.220916.module3
