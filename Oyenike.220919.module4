@@ -1,0 +1,54 @@
+  315  echo $STOCK
+  316  STOCK="${STOCK}_US"
+  317  echo $STOCK
+  318  PRICE=290.84
+  319  echo "The current price of ${STOCK} is ${PRICE}"
+  320  WHOAMI=$USER
+  321  echo $WHOAMI
+  322  SEVERTYPE=$(uname)
+  324  echo $SEVERTYPE
+  325  CMD="uname -i"
+  326  echo $CMD
+  328  echo `$CMD`
+  329  cd
+  330  mkdir scripts
+  331  echo $PATH
+  332  export PATH="$PATH:/scripts/"
+  333  echo $PATH
+  334  ls
+  335  rm -rf Algo1
+  336  ls
+  337  mkdir Payment1
+  338  cd Payment1
+  339  mkdir logs configuration scripts
+  340  ls
+  341  cd scripts
+  342  touch start.sh
+  343  cd ..
+  344  cd configuration
+  345  touch instance.properties
+  346  ls -ltr
+  347  chmod u=rwx,og=r instance.properties
+  348  ls -ltr
+  349  cd ..
+  350  cd scripts
+  351  ls
+  352  chmod u=rwx,g=rwx,o=x start.sh
+  353  ls -ltr
+  354  cd
+  355  man cat > cat.output
+  356  chmod u=r,g=rwx,o=r cat.output
+  357  ls -ltr
+  358  pwd
+  359  rm -rf Payment1
+  360  ls
+  361  rm -i cat.output
+  362  mkdir temp
+  363  cd temp
+  364  pw
+  365  pwd
+  366  MYTEMP=/home/ec2-user/temp
+  367  echo $MYTEMP
+  368  MYTEMP=""
+  369  cd
+  371  history > Oyenike.220919.module4
