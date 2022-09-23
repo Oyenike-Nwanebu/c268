@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# This script tells a user about their session
+
+echo "Username: $USER"
+echo "Today's date is $(date +%Y.%m.%d)"
+echo "The time is $(TZ=':US/Eastern' date +%r)"
+echo "Your current working directory is `pwd`"
+echo "The number of files in `pwd`: `ls . -1 | wc -l`"
+echo "The biggest file in your current directory: `ls -ltShr | tail -n 1 |awk '{print $9}'`"   
+echo "The biggest file in your current directory: `ls -a | sort -nr | head -1`"  
+
+exit 0
