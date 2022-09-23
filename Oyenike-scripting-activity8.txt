@@ -1,0 +1,121 @@
+#!/bin/bash
+
+
+count=1
+arr=() #empty array to hold numbers
+while (( count <  6 )); do  #prompts user for the first 5 input
+       echo "Please enter an integer"
+       read input
+       if [[ $input =~ ^[0-9]+$ ]]; then
+	       arr+=($input)
+	       ((count++))
+	else
+		echo "You need to enter an integer"
+		exit 1
+	fi
+done
+
+echo ${arr[@]}
+echo "Do you want to continue? (Yes/No)"
+read option
+choice=${option}
+
+sum=0
+product=1      
+min=${arr[0]}  #initialize minimum value as first element of array
+max=${arr[0]}  #initialize maximum value as first element of array
+#average=0
+#position=1
+
+if [ $choice == "No" ] || [ $choice == "no" ] || [ $choice == "nO" ] || [ $choice == "NO" ]; then
+	for num in ${arr[@]} 
+	do
+	
+		sum=$((sum+num))
+		product=$((product*num))
+
+		if (( min > num )); then
+			min=$num
+		fi
+
+		if (( max < num )); then
+			max=$num
+		fi
+
+	done
+	#average=$((sum/((count-1))))
+	
+	echo "The numbers entered are:"
+	echo ${arr[@]}
+	echo "The product of the numbers is:"
+	echo $product
+	echo "The average of the numbers is:" 
+	echo "scale=2 ; $sum / ($count - 1)" | bc
+	echo "The sum of the numbers is:" 
+	echo $sum
+	echo "The minimum integer is:" 
+	echo $min
+	echo "The maximum integer is:" 
+	echo $max
+
+
+
+else
+	while [ $choice == "Yes" ] || [ $choice == "yes" ] || [ $choice == "yEs" ] || [ $choice == "yeS" ] || [ $choice == "YEs" ] || [ $choice == "yES" ] || [ $choice == "YES" ] && [ $count -lt 11 ]; do
+		echo "Please enter a  ${count}th integer"
+		read input
+		if [[ $input =~ ^[0-9]+$ ]]; then
+		       arr+=($input)
+		       ((count++))
+		else
+
+			echo "You need to enter an integer"
+			exit 1
+		fi
+		
+
+		if (( "$count" <= 10 )); then
+			echo "Do you want to continue? (Yes/No)"
+			read option
+			choice=${option}
+		fi
+	done
+
+	if [ $choice == "No" ] || [ $choice == "no" ] || [ $choice == "nO" ] || [ $choice == "NO" ]; then
+		for num in ${arr[@]} 
+		do
+		
+			sum=$((sum+num))
+			product=$((product*num))
+
+			if (( min > num )); then
+				min=$num
+			fi
+
+			if (( max < num )); then
+				max=$num
+			fi
+
+		done
+		#average=$((sum/((count-1))))
+
+		echo "The numbers entered are:"
+	        echo ${arr[@]}
+		echo "The product of the numbers is:"
+		echo $product
+		echo "The average of the numbers is:" 
+		echo "scale=2 ; $sum / ($count - 1)" | bc
+		echo "The sum of the numbers is:" 
+		echo $sum
+		echo "The minimum integer is:" 
+		echo $min
+		echo "The maximum integer is:" 
+		echo $max
+
+	fi
+
+fi
+
+
+
+

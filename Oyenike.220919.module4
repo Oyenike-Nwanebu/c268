@@ -1,4 +1,4 @@
-  315  echo $STOCK
+  #Working with variable
   316  STOCK="${STOCK}_US"
   317  echo $STOCK
   318  PRICE=290.84

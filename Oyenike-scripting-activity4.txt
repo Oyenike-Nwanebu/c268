@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Author: Oyenike
+# version: 1
+# This script validates how secure someone's password is
+# Characteristics of a secure password:
+# 1. Length should be 8 or more characters
+# 2. The password should contain numbers and letters
+# 3. The password should contain both uppercase and lowercase letters
+
+
+echo "Enter your password?"
+read pword
+
+while  [ ${#pword} -lt 8 ]; do
+       echo "Your password is insecure. Please enter a new password with at least 8 characters"
+       read pword
+done
+if [ ${#pword} -ge 8 ]; then
+	
+	T2=`echo $pword | grep "[A-Z]"`
+	if [ -z "$T2" ]; then
+		echo "PASSWORD MUST CONTAIN AT LEAST 1 UPPERCASE"
+		exit 1
+
+	else
+	
+		T3=`echo $pword | grep "[a-z]"`
+		if [ -z "$T3" ]; then
+			echo "PASSWORD MUST CONTAIN AT LEAST 1 LOWERCASE"
+			exit 1
+		
+		else
+			
+			T4=`echo $pword | grep "[0-9]"`
+			if [ -z "$T4" ]; then
+				echo "PASSWORD MUST CONTAIN AT LEAST 1 DIGIT"
+				exit 1
+			else
+
+				T5=`echo $pword | grep "[a-Z]"`
+				if [ -z "$T5" ]; then
+					echo "PASSWORD MUST CONTAIN AT LEAST 1 LETTER"
+					exit 1
+				else
+					echo "YOUR PASSWORD IS SECURE"
+				        exit 0	
+				fi
+			fi
+
+		fi
+
+	fi
+
+fi
+

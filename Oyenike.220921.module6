@@ -1,0 +1,848 @@
+    1  sudo yum update
+    2  pwd
+    3  cd /var/log
+    4  cd ..
+    5  pwd
+    6  ls
+    7  ls -l
+    8  ls -la
+    9  pwd
+   10  ls
+   11  cd /var/log
+   12  cd ..
+   13  ls
+   14  ls -l
+   15  cd c268
+   16  ls
+   17  cd ..
+   18  git clone https://github.com/Oyenike-Nwanebu/c268.git
+   19  cd c268
+   20  ls
+   21  git add .
+   22  git commit -m "new file added"
+   23  git push
+   24  cd
+   25  ls -ltr
+   26  cd c268
+   27  mkdir BasicExercise
+   28  cd BasicExercise
+   29  pwd
+   30  touch file.txt
+   31  cd ..
+   32  pwd
+   33  cd BasicExercise
+   34  ls
+   35  cd ..
+   36  rm -rf BasicExercise
+   37  ls -ltr
+   38  ls -latr
+   39  cd 
+   40  pwd
+   41  ls 
+   42  cd c268
+   43  pwd
+   44  find /home/ec2-user/c268 -name "file*"
+   45  cat Oyenike.220916.module2
+   46  cd ..
+   47  cat Oyenike.220916.module2
+   48  vi Oyenike.220916.module2
+   49  ls
+   50  pwd
+   51  ls -latr
+   52  cd c268
+   53  git status
+   54  echo hello > file_test
+   55  cat file_test
+   56  grep hello file_test
+   57  grep -v hello file_test
+   58  echo world > file_test
+   59  grep -v hello file_test
+   60  echo 123 | grep [0-9]
+   61  cd 
+   62  ls
+   63  ls | wc -l
+   64  mv Oyenike.220916.module2 /c268
+   65  ls
+   66  sudo mv ~/Oyenike.220916.module2 ~/c268
+   67  cd c268
+   68  ls
+   69  git status
+   70  cd
+   71  pwd
+   72  mkdir Algo1
+   73  cd ALgo1
+   74  cd Algo1
+   75  mkdir config bin logs scripts
+   76  cd config
+   77  touch config.config variables
+   78  cd ..
+   79  cd scripts
+   80  touch start.sh stop.sh admin.sh
+   81  cd ..
+   82  cd logs
+   83  touch today.log
+   84  cd
+   85  ls -ltr
+   86  ls -R
+   87  cd /Algo1/config
+   88  cd ~/Algo1/config
+   89  rm variables
+   90  ls
+   91  cd ~/Algo1
+   92  rmdir bin
+   93  ls
+   94  cd
+   95  cd Algo1
+   96  mkdir bin
+   97  cd logs
+   98  mkdir oldlogs
+   99  cd oldlogs
+  100  mkdir 2019 2018 2017
+  101  cd 2017
+  102  touch 2017.log
+  103  cd ../2018
+  104  touch 2018.log
+  105  cd ../2019
+  106  touch 2019.log
+  107  cd 
+  108  rm -r ~/Algo1/logs/oldlogs
+  109  pwd
+  110  find -name "*.sh"
+  111  cd ~/Algo1/scripts
+  112  rm s*.sh
+  113  ls -a
+  114  ls -la
+  115  cd ~/c268
+  116  history > Oyenike.220916.module3
+  117  ls
+  118  git add .
+  119  git commit -m "module 2 & 3 files added"
+  120  git push
+  121  cat Oyenike.220916.module2
+  122  vi Oyenike.220916.module2
+  123  vi Oyenike.220916.module3
+  124  vi Oyenike.220916.module2
+  125  cd
+  126  env
+  127  cd c268
+  128  ls
+  129  vi Oyenike.220916.module3 
+  130  vi Oyenike.220916.module2
+  131  #Use to comment
+  132  VAR=pwd
+  133  echo $VAR
+  134  $VAR
+  135  VAR=$(pwd)
+  136  echo VAR
+  137  echo $VAR
+  138  VAR1=`pwd`
+  139  echo $VAR1
+  140  echo "$VAR1 /addtovariable"
+  141  echo "$VAR1 _US"
+  142  echo "$VAR1_US"
+  143  echo "${VAR1}_US"
+  144  cd ~
+  145  cd /
+  146  ls -ltr
+  147  cd ~/c268
+  148  git add .
+  149  git commit -m "exercises edited"
+  150  git push
+  151  pwd
+  152  ls
+  153  cd var/log
+  154  cd /var/log
+  155  ls /
+  156  cd ..
+  157  pwd
+  158  cd ..
+  159  pwd
+  160  ls /home
+  161  ls -l
+  162  man ls
+  163  cd /usr/bin
+  164  pwd
+  165  cd ..
+  166  pwd
+  167  ls
+  168  ls -l
+  169  cd
+  170  cd /home
+  171  cd
+  172  pwd
+  173  mkdir c268
+  174  ls
+  175  cd c268
+  176  cd
+  177  ls
+  178  ls -l
+  179  ls -ltr
+  180  touch file.txt
+  181  ls
+  182  ls -l
+  183  ls -lt
+  184  ls -ltr
+  185  pwd
+  186  cd /
+  187  cd /home
+  188  ls
+  189  cd ec2-user
+  190  cd 
+  191  ls
+  192  cd /
+  193  ls
+  194  cd /home/ec2-user/c268
+  195  ls
+  196  pwd
+  197  uname
+  198  uname -a
+  199  history
+  200  pwd
+  201  cd
+  202  pwd
+  203  sudo yum install git
+  204  pwd
+  205  cd /var/log
+  206  cd ..
+  207  pwd
+  208  ls 
+  209  ls -l
+  210  ls -ltr
+  211  cd /
+  212  cd /home
+  213  cd ..
+  214  man ls
+  215  cd /var
+  216  ls -laShr
+  217  uname -a
+  218  cd
+  219  touch module2.txt
+  220  history > Oyenike.220916.module2
+  221  ls
+  222  cd /Oyenike.220916.module2
+  223  open module2.txt
+  224  pwd
+  225  ls -l
+  226  cat Oyenike.220916.module2
+  227  git --version
+  228  git clone git@github.com:Oyenike-Nwanebu/linux-c268.git
+  229  pwd
+  230  ls
+  231  cd c268
+  232  git clone git@github.com:Oyenike-Nwanebu/linux-c268.git
+  233  cd ..
+  234  ls
+  235  pwd
+  236  cd c268
+  237  touch file.txt
+  238  cd ..
+  239  git clone git@github.com:Oyenike-Nwanebu/linux-c268.git
+  240  git clone git@github.com:Oyenike-Nwanebu/c268.git
+  241  cd c268
+  242  rm *
+  243  ls
+  244  git clone git@github.com:Oyenike-Nwanebu/c268.git
+  245  cd ..
+  246  git clone git@github.com:Oyenike-Nwanebu/c268.git
+  247  git status
+  248  git clone https://github.com/Oyenike-Nwanebu/c268.git
+  249  cd c268
+  250  touch file.txt
+  251  git add .
+  252  git status
+  253  git commit
+  254  #working with variables
+  255  STOCK=AAPL
+  256  echo $STOCK
+  257  STOCK="${STOCK}_US"
+  258  echo STOCK
+  259  echo $STOCK
+  260  PRICE=290.84
+  261  echo "The current price of {STOCK} is {PRICE}"
+  262  echo "The current price of ${STOCK} is ${PRICE}"
+  263  pwd
+  264  #Working with Variables
+  265  STOCK=AAPL
+  266  echo $STOCK
+  267  STOCK="${STOCK}_US"
+  268  PRICE=290.84
+  269  echo "The current price of ${STOCK} is ${PRICE}"
+  270  WHOAMI="$USER"
+  271  CMD="uname -i"
+  272  echo $CMD
+  273  echo `CMD`
+  274  echo `$CMD`
+  275  cd ~
+  276  cd ~/home
+  277  pwd
+  278  cd ..
+  279  mkdir scripts
+  280  cd ec2-user
+  281  mkdir scripts
+  282  echo $PATH
+  283  ls /usr/bin
+  284  clea
+  285  clear
+  286  man ps
+  287  ps -ef
+  288  ps -f
+  289  ps -ef f
+  290  ps | grep -v root
+  291  ps -ef | grep -v root
+  292  ps -s 
+  293  man ps
+  294  ps -S
+  295  man ps
+  296  ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan
+  297  pstree -shapu $$
+  298  ps -ef |egrep "$$|cmd
+  299  "
+  300  ps -ef |egrep "$$|cmd"
+  301  ps -eo user,pid,ppid,stat,cmd | egrep "(CMD|$$)"
+  302  CLEAR
+  303  clear
+  304  ps -eo pid,stat | grep -S
+  305  ps -eo pid,stat | grep S
+  306  ps -eo pid,stat | grep S | head
+  307  ps -eo pid,stat | grep S | head -2
+  308  top -u $USER
+  309  top
+  310  clear
+  311  ping google.com
+  312  ps -ef | grep ping
+  313  kill -9 5150
+  314  ps -ef | grep ping
+  315  ps -ef | grep ping -v grep
+  316  netstat -a
+  317  ping google.com
+  318  ping amazon.ca
+  319  clear
+  320  SEVERTYPE=`uname`
+  321  echo $SEVERTYPE
+  322  CMD="uname -i"
+  323  echo $CMD
+  324  echo `CMD`
+  325  echo `$CDM`
+  326  echo $CMD
+  327  echo "${CMD}"
+  328  echo ($CMD)
+  329  echo `$CMD`
+  330  clear
+  331  man rm
+  332  clear
+  333  #Working with variables
+  334  STOCK=AAPL
+  335  echo $STOCK
+  336  STOCK="${STOCK}_US"
+  337  echo $STOCK
+  338  PRICE=290.84
+  339  echo "The current price of ${STOCK} is ${PRICE}"
+  340  WHOAMI=$USER
+  341  echo $WHOAMI
+  342  SEVERTYPE=$(uname)
+  343  echo SEVERTYPE
+  344  echo $SEVERTYPE
+  345  CMD="uname -i"
+  346  echo $CMD
+  347  echo `CMD`
+  348  echo `$CMD`
+  349  cd
+  350  mkdir scripts
+  351  echo $PATH
+  352  export PATH="$PATH:/scripts/"
+  353  echo $PATH
+  354  ls
+  355  rm -rf Algo1
+  356  ls
+  357  mkdir Payment1
+  358  cd Payment1
+  359  mkdir logs configuration scripts
+  360  ls
+  361  cd scripts
+  362  touch start.sh
+  363  cd ..
+  364  cd configuration
+  365  touch instance.properties
+  366  ls -ltr
+  367  chmod u=rwx,og=r instance.properties
+  368  ls -ltr
+  369  cd ..
+  370  cd scripts
+  371  ls
+  372  chmod u=rwx,g=rwx,o=x start.sh
+  373  ls -ltr
+  374  cd
+  375  man cat > cat.output
+  376  chmod u=r,g=rwx,o=r cat.output
+  377  ls -ltr
+  378  pwd
+  379  rm -rf Payment1
+  380  ls
+  381  rm -i cat.output
+  382  mkdir temp
+  383  cd temp
+  384  pw
+  385  pwd
+  386  MYTEMP=/home/ec2-user/temp
+  387  echo $MYTEMP
+  388  MYTEMP=""
+  389  cd
+  390  History > Oyenike.220919.module4
+  391  history > Oyenike.220919.module4
+  392  vi Oyenike.220919.module4
+  393  cd c268
+  394  git add .
+  395  git commit -m "Module4 added"
+  396  git add ..
+  397  cd 
+  398  mv Oyenike.220919.module4 c268
+  399  cd c268
+  400  ls
+  401  git add .
+  402  git commit -m "Module4 added"
+  403  git push
+  404  ls
+  405  vi Oyenike.220916.module3
+  406  ls usr/bin
+  407  ls /usr/bin
+  408  clear
+  409  vi .bash_profile
+  410  clear
+  411  cd c268
+  412  vimtutor
+  413  ls
+  414  vi Oyenike.220919.module4
+  415  vi ~/Algo1
+  416  vi Oyenike.220919.module4
+  417  cd
+  418  touch avengers
+  419  vi avengers
+  420  wc avengers
+  421  vi avengers
+  422  wc -l avengers
+  423  vi avengers
+  424  mv avengers avengers.oyenike
+  425  mv avengers.oyenike avengers.Oyenike
+  426  vi avengers.Oyenike
+  427  clear
+  428  wget https://the-software-guild.s3.amazonaws.com/m3-prodsupport/2005-onl/linux/fixGenerator.sh
+  429  ls
+  430  clear
+  431  ls -l fixGenerator.sh
+  432  chmod 700 fixGenerator.sh
+  433  ls -l fixGenerator.sh
+  434  ./fixGenerator.sh
+  435  sed -i "s/\r//g" fixGenerator.sh 
+  436  ./fixGenerator.sh
+  437  man sed
+  438  ./fixGenerator.sh &
+  439  ls
+  440  ps -eg | grep fixGen
+  441  clear
+  442  ps -ef | grep fixGen
+  443  man ps
+  444  ls
+  445  vi fixGenerator.sh
+  446  clear
+  447  ls
+  448  cat fixGenerator.sh
+  449  man cat
+  450  clear
+  451  cat fixlog2022092017.log > newlog.log
+  452  ls
+  453  cat fixlog20220920173104.log > newlog.log
+  454  mkdir logs
+  455  mv newlog.log logs
+  456  ls logs/
+  457  cat fixlog20220920173104.log >> logs/newlog.log
+  458  man ln
+  459  ln -s logs/newlog.log daily
+  460  ls -l
+  461  less daily 
+  462  cat fixlog20220920173104.log | less
+  463  ls fixlog20220920173104.log 
+  464  less fixlog20220920173104.log 
+  465  grep 35=d fixlog*
+  466  grep -i 35=d fixlog*
+  467  grep -i 35=d fixlog* > logs/neworders.log
+  468  cp logs/neworders.log ~
+  469  ls
+  470  wc -l  neworders.log 
+  471  grep 54=1 fixlog* > logs/buymessages.log
+  472  grep -iv 35=d fixlog* > logs/nonneworders.log
+  473  wc -w logs/nonneworders.log 
+  474  tail -n5 logs/nonneworders.log 
+  475  grep -i aapl fixlog*
+  476  grep -i aapl fixlog* | head -n2
+  477  ln -s  fixGenerator.sh fix
+  478  ls -l
+  479  tail -f fixlog* | grep 35=D
+  480  mkdir superlogs
+  481  cp logs/* superlogs
+  482  ls superlogs
+  483  grep -c FB fixlog*
+  484  wc -w fixlog*
+  485  grep NFLX fixlog* | grep -c 35=D
+  486  grep NFLX fixlog* | grep 35=D | wc -l
+  487  uname
+  488  clear
+  489  ls
+  490  rm fixlog*
+  491  ls
+  492  rm fixGenerator.sh 
+  493  ls
+  494  rm daily
+  495  rm -rf superlogs/
+  496  ls
+  497  rm neworders.log
+  498  vi fix
+  499  rm fix
+  500  ls
+  501  rm -rf logs
+  502  ls
+  503  clear
+  504  ls
+  505  clear
+  506  ps
+  507  ps -ef
+  508  clear
+  509  #Health of a server
+  510  ps -ef
+  511  echo $USER
+  512  ps -ef | grep $USER
+  513  ps -ef | grep -v $USER
+  514  ps -f $$
+  515  pstree 
+  516  man pstree
+  517  pstree -shapu
+  518  pstree -shapu $$
+  519  man ps
+  520  ps -eo user,pid,cmd
+  521  ps -eo pid > list
+  522  man sleep
+  523  sleep 300 &
+  524  ps -ef | grep sleep
+  525  kill 14754
+  526  top ps
+  527  top
+  528  top -u root
+  529  man top
+  530  top 
+  531  top -u ec2-user
+  532  top
+  533  ping yahoo.com
+  534  traceroute yahoo.com > yahoo.route
+  535  less yahoo.route 
+  536  ln -s yahoo.route route
+  537  ls -ltr
+  538  man ss
+  539  ss -s > output
+  540  ls
+  541  vi output
+  542  rm output
+  543  netstat -a  > output
+  544  mkdir network
+  545  mv route output network
+  546  cd network
+  547  ls
+  548  ifconfig
+  549  man ps
+  550  clear
+  551  jobs
+  552  sleep 500 &
+  553  jobs
+  554  clear
+  555  jobs
+  556  clear
+  557  jobs
+  558  ps -ef | grep sleep
+  559  jobs
+  560  bg %1
+  561  sleep 600
+  562  jobs
+  563  sleep 600
+  564  jobs
+  565  bg %2
+  566  jobs
+  567  ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,cmd | grep sleep
+  568  fg %1
+  569  man cat &
+  570  sleep 20 && echo second &
+  571  fg %4
+  572  sleep 20s && echo second &
+  573  jobs
+  574  C
+  575  sleep 10; echo hello
+  576  sleep 10asdf; echo hello
+  577  sleep 5 || echo hello
+  578  sleep 5asdf || echo hello
+  579  clear
+  580  sleep 360 &
+  581  echo $!
+  582  #shows the process id of the last child process
+  583  echo $!
+  584  #show the contents of the proc folder
+  585  ls /proc/3329
+  586  ls /proc/$!
+  587  ls /proc/$!/fd
+  588  ls -l /proc/$!/fd
+  589  jobs
+  590  sleep 500 &
+  591  echo $!
+  592  #write data to stdin
+  593  echo "Writing data" >> /proc/$!/fd/0
+  594  fg %5
+  595  bg %5
+  596  tail -f /proc/$!/fd/
+  597  tail -f /proc/$!/fd/1
+  598  bg %6
+  599  bg %5
+  600  clear
+  601  watch date
+  602  watch -n5 df -h
+  603  watch date
+  604  watch -n5 -d date
+  605  watch -d=cumulative date
+  606  watch 'CMD_1 | CMD_2'
+  607  watch 'echo "hello world" | grep world'
+  608  watch 'echo "hello world" | grep "world"'
+  609  watch 'echo hello world | grep world'
+  610  watch 'ps -ef | grep world'
+  611  clear
+  612  nohup sleep 700
+  613  nohup echo "hello" > mycommand.out 2>&1 &
+  614  jobs
+  615  ls
+  616  clear
+  617  nohup sleep 800
+  618  echo "writing data again" >> /proc/3397/fd/0
+  619  clear
+  620  jobs
+  621  history | grep ps
+  622  ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,cmd | grep sleep
+  623  nohup sleep 1000
+  624  clear
+  625  ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,cmd | grep sleep
+  626  sleep 2000
+  627  clear
+  628  ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,cmd | grep sleep
+  629  clear
+  630  mycommand
+  631  mycommand > error.txt
+  632  cat error.txt 
+  633  mycommand 2> error.txt
+  634  cat error.txt 
+  635  hello="sleep"
+  636  sleep 1100 &
+  637  watch "ps -ef | grep sleep"
+  638  watch "ps -ef | grep hello"
+  639  watch "ps -ef | grep $hello"
+  640  sleep 330
+  641  sleep 550
+  642  jobs
+  643  bg %25,6
+  644  bg %5,6
+  645  bg %5 6
+  646  clear
+  647  man sed
+  648  sed ls
+  649  ls
+  650  cd c268
+  651  ls
+  652  sed 's/echo/Echo/g' Oyenike.220919.module4
+  653  sed 's/Echo/echo/g' Oyenike.220919.module4 
+  654  touch sedfile.txt
+  655  vi sedfile.txt 
+  656  sed 's/amzn\ amzn\ amzn/amzn\n/g' hello
+  657  sed 's/amzn\ amzn\ amzn/amzn\n/g' sedfile.txt
+  658  sed 's/;\/,g' sedfile.txt > fixOutput.csv
+  659  sed 's/;\/,/g' sedfile.txt > fixOutput.csv
+  660  vi sedfile.txt
+  661  sed '5d' sedfile.txt
+  662  sed '/hello/d' sedfile.txt
+  663  awk '{print}' sedfile.txt
+  664  awk '/New/{print}' sedfile.txt
+  665  awk '{print $1,$2}' sedfile.txt
+  666  awk '{print $1,$3}' sedfile.txt
+  667  ps -eo pid,stat|tail -1|awk '{print $1}'
+  668  sleep 770 &
+  669  ps -eo pid,cmd
+  670  ps -eo pid,cmd | egrep "sleep 770"
+  671  ps -eo pid,cmd | egrep "sleep 770" | grep -v grep
+  672  ps -eo pid,cmd | egrep "sleep 770" | grep -v grep | awk '{print $1}'
+  673  hello=`ps -eo pid,cmd | egrep "sleep 770" | grep -v grep | awk '{print $1}'`
+  674  echo $hello
+  675  echo $!
+  676  history | grep sed
+  677  sed 's/;\/,/g' sedfile.txt > fixOutput.csvclear
+  678  clear
+  679  cd
+  680  STOCK=AAPL
+  681  echo $STOCK
+  682  STOCK="${STOCK}_US"
+  683  echo $STOCK
+  684  PRICE=290.84
+  685  echo "The current price of ${STOCK} is ${PRICE}"
+  686  WHOAMI=$USER
+  687  echo $WHOAMI
+  688  SEVERTYPE=$(uname)
+  689  echo $SEVERTYPE
+  690  uname
+  691  $USER
+  692  echo $uname
+  693  CMD="uname -i"
+  694  echo $CMD
+  695  echo ${CMD}
+  696  echo $(CMD)
+  697  echo ($CMD)
+  698  echo `CMD`
+  699  echo $($CMD)
+  700  echo `$CMD`
+  701  mkdir scripts
+  702   echo $PATH
+  703  export PATH=$PATH:scripts
+  704   echo $PATH
+  705  ls
+  706  mkdir Payment1
+  707  cd Payment1
+  708  mkdir logs configuration scripts
+  709  cd scripts
+  710  touch start.sh
+  711  cd ~/configuration
+  712  cd ../configuration
+  713  touch instance.properties
+  714  chmod u=rwx,og=r instance.properties
+  715  ls -ltr
+  716  cd ..
+  717  cd scripts
+  718  rm -rf start.sh
+  719  ls
+  720  cd ..
+  721  cd Payment1
+  722  touch ../scripts/start.sh
+  723  cd scripts
+  724  ls
+  725  clear
+  726  for i in {1..20}; do echo $i done
+  727  for i in {1..20}; do echo $i; done
+  728  vi test
+  729  source test
+  730  mv test > test.sh
+  731  mv test test.sh
+  732  source test.sh
+  733  ls -ltr
+  734  chmod +x test.sh
+  735  ./test.sh
+  736  vi test.sh
+  737  source test.sh
+  738  ./test.sh | tail -n +4
+  739  vi test.sh
+  740  source test.sh 
+  741  clear
+  742  vi test.sh 
+  743  touch test1.sh
+  744  vi test1.sh 
+  745  source test1.sh 
+  746  vi test1.sh 
+  747  source test1.sh 
+  748  vi test1.sh 
+  749  source test1.sh 
+  750  vi test1.sh 
+  751  source test1.sh 
+  752  vi test1.sh 
+  753  source test1.sh 
+  754  ls /proc/$$/fd -l
+  755  echo $$
+  756  echo spiderman > /proc/$$/fd/1
+  757  ps -ef | grep $$
+  758  ps -ef | grep $$ | grep -v grep
+  759  vi test1.sh 
+  760  ./test1.sh
+  761  source test1.sh
+  762  cat test1.sh
+  763  cat test1.sh > file.log
+  764  cat file.log
+  765  cattest1.sh 2> error.log
+  766  vi error.log
+  767  cat test1.sh > file.log 2>&1
+  768  cat file.log
+  769  vi test1.sh 
+  770  source test1.sh 
+  771  vi test1.sh 
+  772  source test1.sh 
+  773  today=`date +%Y.%m.%d`
+  774  echo $today
+  775  today="date +%Y.%m.%d"
+  776  echo $today
+  777  echo `today`
+  778  echo `$today`
+  779  echo $($today)
+  780  logfile=~/$user.log.$($today)
+  781  echo $logfile
+  782  date -d -1day
+  783  date -d -1day +%Y.%m.%d
+  784  vi test1.sh 
+  785  test "cpt america" = "iron man"
+  786  test "cpt america" = "iron man" && echo "true"
+  787  test "cpt america" = "iron man" && echo "true" || echo "false"
+  788  test "iron man" = "iron man" && echo "true" || echo "false"
+  789  clear
+  790  test -d filename
+  791  test -d filename && echo "file found" || echo "file not found 404"
+  792  man test
+  793  mkdir filename
+  794  test -d filename && echo "file found" || echo "file not found 404"
+  795  test -f filename && echo "file found" || echo "file not found 404"
+  796  clear
+  797  cd ..
+  798  clear
+  799  ps -ef
+  800  echo $USER
+  801  ps -ef | grep $USER
+  802  ps -ef | grep -v $USER
+  803  ps -ef $$
+  804  pstree
+  805  pstree -ef
+  806  pstree 
+  807  pstree -f
+  808  man pstree
+  809  clear
+  810  #Health of a Server
+  811  ps -ef
+  812  echo $USER
+  813  ps -ef | grep $USER
+  814  ps -ef | grep -v $USER
+  815  ps -ef $$
+  816  pstree -shapu $$
+  817  ps -eo user,pid,cmd
+  818  ps -eo pid > list
+  819  sleep 300 &
+  820  ps -ef | grep sleep
+  821  kill 5712
+  822  ps -ef | grep sleep
+  823  top
+  824  top /
+  825  top -u root
+  826  ping yahoo.som
+  827  ping yahoo.com
+  828  traceroute yahoo.com yahoo.route
+  829  traceroute yahoo.com > yahoo1.route
+  830  vi yahoo1.route
+  831  less yahoo1.route
+  832  less -1 yahoo1.route
+  833  less -5 yahoo1.route 
+  834  wc -l yahoo1.route 
+  835  ln -s yahoo1.route route
+  836  ls -ltr
+  837  man netstat
+  838  netstat > output
+  839  vi output
+  840  rm output
+  841  netstat -a > output
+  842  mkdir network
+  843  rm -rf network
+  844  mkdir network
+  845  mv output network
+  846  ifconfig
+  847  cd c268
+  848  history > Oyenike.220921.module6

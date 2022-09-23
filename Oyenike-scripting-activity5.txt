@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Author: Oyenike
+# version: 1
+# This script takes a number as an input and reverses it out to the user
+
+echo "Please enter a number:"
+read num
+
+if [[ $num =~ ^[0-9]+$ ]]; then
+	echo $num | rev
+	exit 0
+else
+	echo "Please enter numbers only"
+	exit 1
+fi
+
+

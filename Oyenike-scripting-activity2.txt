@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Author: Oyenike
+#version: 1
+#This script renames every file in directory 'activity2' to have an extension of today's date in YYYYMMDD format
+
+for filename in activity2/*; do
+	mv $filename "$filename.`date +%Y%m%d`"
+done
+
+exit 0
