@@ -29,13 +29,11 @@ else
 
 	else
 
-		arr=($numbers)  # put numbers in an array
-		#array_length=${#arr[*]}
-
-		arr=(`echo "${arr[@]}" | tr ' ' '\n' | sort -nur| tr '\n' ' '`)
-
-		echo ${arr[@]}
+		#arr=`echo "${arr[@]}" | tr ' ' '\n' | sort -u | tr '\n' ' '`
 		
+		new_arr=$(echo "$numbers" | tr ' ' '\n' | nl | sort -u -k2 | sort -n | cut -f2- |tac)
+	    
+		echo $new_arr
 		exit 0
 
 
