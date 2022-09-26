@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Author: Oyenike
+# version: 1
+# This script reads a file containing numbers, sorts the numbers into reverse order and outputs the numbers without duplicates to the screen
+
+echo "Please provide file path"
+read filepath
+
+filepath="${filepath/#\~/$HOME}"
+
+#echo $filepath
+
+if ! [ -f $filepath ]
+then
+	echo "File $filepath does not exist"
+	exit 1
+
+else
+	numbers=`cat $filepath`
+	#numbers=`cat ~/activity11-file.txt`
+	#echo "$numbers"
+
+	if [[ $numbers =~ [^0-9]+$ ]]
+       	then
+
+		echo "This file contains non-numeric characters"
+		exit 1
+
+	else
+
+		arr=($numbers)  # put numbers in an array
+		#array_length=${#arr[*]}
+
+		arr=(`echo "${arr[@]}" | tr ' ' '\n' | sort -nur| tr '\n' ' '`)
+
+		echo ${arr[@]}
+		
+		exit 0
+
+
+	fi
+fi
