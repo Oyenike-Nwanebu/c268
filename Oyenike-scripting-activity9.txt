@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#Author: Oyenike
+#version: 1
+# This script takes a file name as a parameter.
+#If the file exists, the script prints an error and exits with a code returned
+#If the file does not exit, the script creates the file
+
+
+echo "Please enter the filename"
+read filename
+
+if [ -f $filename ]; then
+	echo "This file already exists"
+	exit 1
+
+else
+	`touch $filename`
+	exit 0
+
+fi
+
+
