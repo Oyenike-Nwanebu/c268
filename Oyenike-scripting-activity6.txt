@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#Author: Oyenike
+#version: 1
+# This script takes two number parameters 'a' and 'b' and then shows True if a is larger than b or False otherwise
+
+echo "Please enter the first number:"
+read a
+
+if [[ "$a" =~ ^[0-9]+(\.[0-9]+)?$ ]]; then
+	echo "Please enter the second number:"
+	read b
+
+	if ! [[ "$b" =~ ^[0-9]+(\.[0-9]+)?$ ]]; then
+		echo "You need to enter a number"
+		exit 1
+	fi
+else
+	echo "You need to enter a number"
+	exit 1
+
+fi
+
+
+if (( $(echo "$a > $b" | bc -l) )); then
+	echo "True"
+else
+	echo "False"
+fi
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Author: Oyenike
+#version: 2
+#This script takes two parameters a and b and then tells the user the difference between the two numbers
+
+source Oyenike-scripting-activity6.sh
+
+diff=`echo "$a - $b" | bc -l`
+
+echo "The difference is $diff"
+
+
