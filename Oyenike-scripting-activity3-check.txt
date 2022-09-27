@@ -1,0 +1,59 @@
+#!/bin/bash
+
+#Author: Oyenike
+#version: 1
+#This script allows a user to check their lottery numbers and advise them if they match or not and how many matches they got
+
+
+count=1
+user_arr=() #empty array to hold user input
+matches=0 
+
+today=`date +%Y%m%d`
+filename="lotterydraw.${today}"
+
+if ! [ -f $filename ]; then
+	source Oyenike-scripting-activity3-draw.sh
+	draw_arr=`cat $filename`
+
+else
+
+	draw_arr=`cat $filename`
+fi
+
+#echo ${draw_arr[@]}
+
+while (( count < 5 ))
+do
+
+	echo "Please enter your lottery numbers"
+	read input
+	if [[ $input =~ [^0-9]+$ ]]; then
+		echo "Please enter numbers only"
+		exit 1
+	else
+		user_arr+=($input)
+		((count++))
+	fi
+done
+
+#echo ${user_arr[@]}
+
+for value in ${user_arr[@]}
+do
+	echo $value
+	if echo ${draw_arr[@]} | grep -q -w $value; then
+		((matches++))
+	fi
+done
+
+if (( matches > 0 )); then
+	echo "You got a match!!"
+	echo "You have "${matches}" matches"
+else
+	echo "Sorry, No match. Try again tomorrow"
+fi
+exit 0
+
+
+

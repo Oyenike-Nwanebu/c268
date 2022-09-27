@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Author: Oyenike
+# version: 1
+# This script picks 5 numbers for each draw which has options between 1 and 50 and a bonus ball number between 1 and 10 for a lottery program
+
+#The script outputs the numbers to a file that has the date in its name
+
+count=1
+arr=() #empty array to hold the numbers drawn
+
+while (( count < 6 )) 
+do
+	arr+=($((1 + $RANDOM % 50)))
+	((count++))
+done
+
+#select bonus ball
+
+arr+=($((1 + $RANDOM % 10)))
+
+echo "${arr[@]}"
+
+echo "${arr[@]}" > "lotterydraw.`date +%Y%m%d`" 
+
+
